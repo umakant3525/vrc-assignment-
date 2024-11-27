@@ -38,14 +38,19 @@ To clone and run the project locally, follow these steps:
     npm install
     ```
 
-4. **Start the Redis server**:
+4. **Check Redis Server Status & Start**:
 
-    - Ensure Redis is installed and running by executing the following command:
+    1. **Check the status of Redis** to see if it's running:
 
     ```bash
-    redis-server
+    sudo systemctl status redis
     ```
+    2. **Check the status of RedisStart the Redis server if it is stopped** :
 
+    ```bash
+    sudo systemctl start redis
+    ```
+    
 5. **Start the server**:
 
     To run the development server, use:
